@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кулинарная книга</title>
+  <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+
+    <div class="site-menu">
+      <button class="site-menu__toggle" type="button">
+        <img class="site-menu__image" src="img/logo.png" alt="Логотип сайта Книга рецептов">
+      </button>
+      <!-- Для закрытия - site-menu--closed , для открытия site-menu--open-->
+      <div class="cook-left site-menu--closed">
+        <h2 class="site-menu__title">Меню</h2>
+        <button class="cook-left__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="cook-list--left">
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Первые блюда</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Вторые блюда</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Закуски</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Салаты</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Десерты</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Изделия из теста</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Напитки</a>
+          </li>
+          <li class="cook-left__item">
+            <a class="cook-left__link" href="#">Другие</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <nav class="main-nav">
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__home" aria-label="Домашняя страница" href="#"></a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Поиск рецепта</a>
+          </li>
+        </ul>
+
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Авторизация</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <div class="menu">
+      <ul class="menu__list cook-list">
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--first" href="#">Первые блюда</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--second" href="#">Вторые блюда</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--fast" href="#">Закуски</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--salad" href="#">Салаты</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--desserts" href="#">Десерты</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--dough" href="#">Изделия из теста</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--drink" href="#">Напитки</a>
+        </li>
+        <li class="cook-list__item">
+          <a class="cook-list__link cook-list__link--other" href="#">Другие</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Для закрытия - удалить modal-show, для открытия добавить modal-show -->
+    <section class="autorization autorization--closed modal">
+      
+      <button class="autorization__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      <form action=""> 
+        <div class="autorization__field autorization__login">
+          <label for="name">Логин</label>
+          <input class="modal-text" type="text" id="name" placeholder="">
+        </div>
+        <div class="autorization__field autorization__password">
+          <label for="pass">Пароль</label>
+          <input class="modal-text" type="text" id="pass" placeholder="">
+        </div>
+        <button class="autorization__input" type="submit">Вход</button>
+      </form>
+
+    </section>
+
+    <!-- Для закрытия - удалить modal-show, для открытия добавить modal-show -->
+    <section class="registration modal ">
+      <button class="registration__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      <form action=""> 
+        <div class="registration__field registration__login">
+          <label for="name">Логин</label>
+          <input class="modal-text" type="text" id="name" placeholder="">
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+  <footer>
+    <p class="about-me">Нашли ощибку? <br> Напишите нам на почту:: <br> nvrrtu@mail.ru</p>
+  </footer>
+</body>
+</html>

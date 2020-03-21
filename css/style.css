@@ -1,0 +1,428 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  font-family: "Pattaya", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  margin-bottom: 10px;
+}
+
+.site-menu__toggle {
+  background-color: rgba(0, 0, 0, 0.81);
+  padding: 20px 60px;
+  border: none;
+}
+
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.81);
+  padding: 35px 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation__home {
+  width: 75px;
+  display: block;
+}
+
+.site-navigation__home::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 61px;
+  background-image: url(../img/home-button.png);
+  z-index: 1;
+}
+
+.site-navigation__link {
+  color: #fff;
+  padding: 32px 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+.user-list__item {
+  color: #fff;
+}
+
+.user-list__link {
+  color: #fff;
+  padding: 32px 20px;
+}
+
+
+.menu__list {
+  max-width: 1596px;
+  margin-top: 35px;
+
+}
+
+.cook-list {
+  background-color: rgba(0, 0, 0, 0.81);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cook-list__item {
+  margin-right: 69px;
+  margin-bottom: 75px;
+}
+
+.cook-list__link {
+  color: #fff;
+  width: 300px;
+  display: block;
+  padding-top: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.cook-list__link--first {
+  background-image: url(../img/Первые\ блюда.png);
+}
+.cook-list__link--second {
+  background-image: url(../img/image\ 3.png);
+}
+.cook-list__link--fast {
+  background-image: url(../img/image\ 4.png);
+}
+.cook-list__link--salad {
+  background-image: url(../img/image\ 5.png);
+}
+.cook-list__link--desserts {
+  background-image: url(../img/image\ 7.png);
+}
+.cook-list__link--dough {
+  background-image: url(../img/image\ 8.png);
+}
+.cook-list__link--drink {
+  background-image: url(../img/image\ 7.png);
+}
+.cook-list__link--other {
+  background-image: url(../img/image\ 10.png);
+}
+
+.autorization--open,
+.site-menu--open {
+  background-color: #202020;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 586px;
+  z-index: 2;
+}
+
+.registration__toggle,
+.autorization__toggle,
+.cook-left__toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #202020;
+  border: none;
+}
+
+.registration__toggle,
+.autorization__toggle {
+  background: rgba(0, 0, 0, 0.91);
+}
+
+.registration__toggle::before,
+.autorization__toggle::before,
+.cook-left__toggle::before {
+  content: '';
+  background-image: url(../img/close.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.site-menu__title {
+  text-align: center;
+  color: #fff;
+}
+
+.cook-list--left {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cook-left__link {
+  color: #fff;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-left: 25px;
+}
+
+.cook-left.site-menu--closed {
+  display: none;
+}
+
+.about-me {
+  color: #fff;
+  text-align: center;
+}
+
+.registration,
+.autorization {
+  position: absolute;
+  width: 792px;
+  
+}
+
+.registration__field,
+.autorization__field {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  width: 960px;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 86px;
+  z-index: 100;
+  position: fixed;
+  top: 71px;
+  left: calc(50% - 480px);
+  background: rgba(0, 0, 0, 0.91);
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
+}
+
+.autorization__field {
+  margin-top: 45px;
+}
+
+.autorization__input {
+  background: #F3AD2E;
+  max-width: 251px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15px 60px;
+}
+
+.registration__login {
+  background-image: url(../img/image\ 11.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 490px;
+}
+
+/* account.html */
+
+.account-menu {
+  background: rgba(0, 0, 0, 0.81);
+  padding: 67px 46px;
+  max-width: 1596px;
+  margin: 0 auto;
+}
+
+.account-menu__information {
+  margin-bottom: 98px;
+}
+
+.account-menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.account-menu__link {
+  width: 700px;
+  padding: 20px 60px;
+  display: block;
+  background-color: #F3AD2E;
+  color: #000;
+  margin-bottom: 59px;
+  text-align: center;
+  
+}
+
+.user-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-information__photo-block {
+  max-width: 260px;
+  text-align: center;
+}
+
+.user-informaiton__photo-text {
+  color: #fff;
+}
+
+.data-text {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 765px;
+}
+
+.data-text__input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 70px;
+}
+
+.user-rating {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/love.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 374px;
+}
+
+.user-rating__number {
+  padding-top: 117px;
+  font-size: 96px;
+}
+
+.user-rating__text {
+  padding-top: 162px;
+}
+
+@media (max-width: 774px) {
+  .cook-list__item {
+    margin: 0 auto;
+  }
+
+  .site-menu--open {
+    width: 100%;
+  }
+
+  .account-menu {
+    padding: 67px 15px;
+  }
+
+  .user-information__photo-block {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .user-information__data-text {
+    margin-bottom: 30px;
+  }
+
+  .site-navigation {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .user-list {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .site-navigation__item:nth-child(1) {
+    width: 150px;
+    height: 70px;
+    margin: 0 auto;
+  
+  }
+
+  .account-menu__list {
+    flex-direction: column;
+  }
+
+  .account-menu__link {
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
