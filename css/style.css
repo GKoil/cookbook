@@ -6,7 +6,7 @@
 body {
   min-width: 320px;
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Pattaya", "Arial", sans-serif;
   font-size: 36px;
@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 72px;
+  margin-top: 14px;
   margin-bottom: 10px;
 }
 
@@ -135,9 +135,10 @@ body {
   color: #fff;
   width: 300px;
   display: block;
-  padding-top: 270px;
+  padding-top: 180px;
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: top;
   text-align: center;
 }
 
